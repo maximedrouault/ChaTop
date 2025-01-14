@@ -1,55 +1,46 @@
-# Estate
+# ChaTop - Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
+Welcome to the frontend of ChaTop, a rental listing management application. This project is developed with Angular. For backend services, refer to the [ChaTop Backend Repository](https://github.com/maximedrouault/ChaTop-back).
 
-## Start the project
+## Prerequisites
 
-Git clone:
+- **Node.js 22 or higher**: [Download Node.js](https://nodejs.org/).
 
-> git clone https://github.com/OpenClassrooms-Student-Center/P3-Full-Stack-portail-locataire
+## Installation and Setup
 
-Go inside folder:
+1. **Clone the repository**:
 
-> cd P3-Full-Stack-portail-locataire
+   ```bash
+   git clone https://github.com/maximedrouault/ChaTop-front.git
+   cd ChaTop-front
+   ```
 
-Install dependencies:
+2. **Install dependencies**:
 
-> npm install
+   ```bash
+   npm install
+   ```
 
-Launch Front-end:
+3. **Start the application**:
 
-> npm run start;
+   ```bash
+   npm start
+   ```
 
+   The application will be available at: `http://localhost:4200`.
 
-## Ressources
+## Environment Configuration
 
-### Mockoon env
+Ensure that the `environment.ts` file in the `src/environments` directory contains the correct configurations for your development environment, particularly the backend API URL.
 
-Download Mockoon here: https://mockoon.com/download/
+## Additional Resources
 
-After installing you could load the environement
+- **Mockoon**: If you use Mockoon for API simulation, you can load the environment `resources/mockoon/rental-oc.json` directly in Mockoon. [Download Mockoon](https://mockoon.com/download/).
 
-> ressources/mockoon/rental-oc.json
+- **Postman Collection**: A Postman collection is available in `resources/postman/rental.postman_collection.json` to test the application's requests. [Import Guide](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-data-into-postman).
 
-directly inside Mockoon 
+## Project Structure
 
-> File > Open environmement
-
-For launching the Mockoon server click on play bouton
-
-Mockoon documentation: https://mockoon.com/docs/latest/about/
-
-### Postman collection
-
-For Postman import the collection
-
-> ressources/postman/rental.postman_collection.json 
-
-by following the documentation: 
-
-https://learning.postman.com/docs/getting-started/importing-and-exporting-data/#importing-data-into-postman
-
-
-### MySQL
-
-SQL script for creating the schema is available `ressources/sql/script.sql`
+- **src/**: Contains the application's source code.
+  - **app/**: Main modules and components.
+  - **environments/**: Configuration files for different environments.
